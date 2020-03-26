@@ -14,8 +14,8 @@ float add(float a, float b)
 }
 void main()
 {
-	int x=4,y=5;
-	float m=3.2,n=7.2;
+	int x=10,y=20;
+	float m=10.2,n=20.2;
 	add();
 	add(x,y);
 	add(m,n);
