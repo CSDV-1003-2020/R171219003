@@ -11,14 +11,16 @@ float add(float a, float b)
 }                                     //This is for addition
 void main()
 {
-<<<<<<< HEAD
 	int x=10,y=20;
 	float m=10.2,n=20.2;
-=======
 	float m=3.2,n=7.2;
->>>>>>> 833bae0205a650ffe76d368db6018e090a72da43
 	add();
 	add(m,n);
+	x=4,y=5;
+	m=3.2,n=7.2;
+	sub();
+	sub(x,y);
+	sub(m,n);
 }                                     //This is main function
 
 //From here changes are from Aditya RAJ
@@ -35,12 +37,5 @@ float add(float a, float b)
 {
 	return (a-b);
 }                                     //This is for substraction
-void main()
-{
-	int x=4,y=5;
-	float m=3.2,n=7.2;
-	sub();
-	sub(x,y);
-	sub(m,n);
-}                                     //This is main function
+
 
