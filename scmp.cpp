@@ -5,6 +5,25 @@ struct node
 	int data;
 	Node *link;
 };
+// From here changes are from Aditya Raj
+Node *top=Null;
+void push(int max, int *curr)
+{
+	if(max<=*curr)
+	{
+		cout<<"\n Stack is FULL\n";
+	}
+	else
+	{
+		int value;
+		cin>>value;
+		Node *ptr =new Node;
+		ptr->data = value;
+		ptr->link = top;
+		*curr ++;
+	}
+}                                             // Changes from Aditya finshed
+
 int main()
 {
 	int current, maximum, choice;
