@@ -27,6 +27,7 @@ void push(int max, int *curr)
 int main()
 {
 	int current, maximum, choice;
+	                                 
 	cout<<"Enter the maximum value of stack:";
 	cin>>maximum;
 	A: cout<<"\nEnter your choice\n1.Insertion\n2.Deletion\n3.Display top value\n4.Exit\n:";
@@ -41,3 +42,16 @@ int main()
 	   }
 	   return 0;
 }
+                                       // Changes from R171219001
+void pop(int *curr) 
+{ 
+if(*curr == 0) 
+cout<<“\nStack is EMPTY\n ”; 
+else 
+{ 
+Node *ptr = top; 
+top = top -> link; 
+delet(ptr); 
+*curr--; 
+} 
+} 
