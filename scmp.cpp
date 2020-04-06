@@ -22,8 +22,21 @@ void push(int max, int *curr)
 		ptr->link = top;
 		*curr ++;
 	}
-}                                             // Changes from Aditya finshed
+} 			// Changes from Aditya finshed
 
+void pop(int *curr)     // Changes from R171219001 
+{ 
+if(*curr == 0) 
+cout<<“\nStack is EMPTY\n ”; 
+else 
+{ 
+Node *ptr = top; 
+top = top -> link; 
+delet(ptr); 
+*curr--; 
+} 
+} 
+ 
 int main()
 {
 	int current, maximum, choice;
@@ -42,16 +55,4 @@ int main()
 	   }
 	   return 0;
 }
-                                       // Changes from R171219001
-void pop(int *curr) 
-{ 
-if(*curr == 0) 
-cout<<“\nStack is EMPTY\n ”; 
-else 
-{ 
-Node *ptr = top; 
-top = top -> link; 
-delet(ptr); 
-*curr--; 
-} 
-} 
+                                     
