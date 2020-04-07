@@ -36,7 +36,6 @@ delet(ptr);
 *curr--; 
 } 
 } 
- 
 int main()
 {
 	int current, maximum, choice;
